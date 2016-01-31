@@ -7,8 +7,10 @@ public class M<T extends Exception> {
         try {
                   new M<RuntimeException>().throwIt(new SQLException());
         }
-    
- catch(final SQLException ex){
-    ex.printStackTrace();
-}}
+//        catch(final SQLException ex){			// This will not work
+        catch(final Exception ex){
+        	System.out.println("Catching the exception");
+        	ex.printStackTrace();
+        }
+    }
 }

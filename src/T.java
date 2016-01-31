@@ -10,6 +10,25 @@ public class T {
 				System.out.println("i=" + ++i + " inside anonymous " + name( ) + " After i=" + i++);}
 			//System.out.println("inside anonymous " + name( ));
 		}.printName( ); }
+
+	public void testMethod(){
+		synchronized (this) {
+			System.out.println("in synchronized block");
+		}
+
+	}
+	
 	public static void main(String[ ] args) {
-		new T("main").reproduce( );
-	} }
+		
+		synchronized (T.class) {
+			System.out.println("synchronized block in static method");			
+		}
+		//new T("main").reproduce( );
+	
+		System.out.println("In T.java");
+		//Test.main(null);;
+	//	Test test = new Test();		// Not allowed of constructor of Test is private
+	} 
+
+
+}

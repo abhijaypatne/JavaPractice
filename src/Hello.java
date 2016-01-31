@@ -2,7 +2,7 @@
 public class Hello {
     Runnable r1 = ()->(System.out.println(this);};
             Runnable r2 = ()->(System.out.println(toString());};
-                public String toString(){return “Howdy!”;}
+                public String toString(){return â€œHowdy!â€�;}
                 public static void main(String args) {
                     new Hello().r1.run();
                     new Hello().r2.run();
@@ -11,12 +11,10 @@ public class Hello {
 
   */             
 
-import java.util.*;
-import java.lang.*;
 
 public class Hello {
-    Runnable r1 = ()->(System.out.println(this));};
-    Runnable r2 = ()->(System.out.println(toString());};
+    Runnable r1 = ()->(System.out.println(this));
+    Runnable r2 = ()->(System.out.println(toString()));
         public String toString(){return "Howdy!";}
         public static void main(String args) {
 //            new Hello().r1.run();

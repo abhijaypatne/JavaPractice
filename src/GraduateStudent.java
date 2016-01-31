@@ -1,4 +1,4 @@
-import Student;
+
 
 class GraduateStudent extends Student {
     public int maxCredits() { return 12; }
@@ -7,7 +7,7 @@ class GraduateStudent extends Student {
 public static void main(String[] args){
 Student s, s1;
 s = new Student();
-s.getMaxCredits(); // which maxCredits method?
+s.maxCredits(); // which maxCredits method?
 s1 = new GraduateStudent();
-S1.getMaxCredits(); // which maxCredits method?
+s1.maxCredits(); // which maxCredits method?
 }}
